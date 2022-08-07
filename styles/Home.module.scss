@@ -1,0 +1,32 @@
+.container {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ff7043;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .outer {
+        width: 600px;
+        height: 600px;
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .count {
+            font-size: 2rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        .inner {
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+        }
+    }
+}
