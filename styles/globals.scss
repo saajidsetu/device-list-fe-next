@@ -1,18 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .outer {
-    width: 600px;
-    height: 600px;
-    //border: 2px solid black;
-    border-radius: 50%;
+  width: 600px;
+  height: 600px;
+  //border: 2px solid black;
+  border-radius: 50%;
 
-    .inner {
-        width: 30px;
-        height: 30px;
-        background: white;
-        border-radius: 50%;
-    }
+  .inner {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 100%;
+  }
 }
