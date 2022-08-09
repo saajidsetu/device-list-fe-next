@@ -19,9 +19,9 @@ const Home = () => {
     router.push("/auth/login");
   };
 
-  const handleNotify = () => {
+  const handleNotify = async () => {
     const token = localStorage.getItem("device-list-token") as string;
-    const res = fetch(`${process.env.NEXT_PUBLIC_API_BASE}/notify`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE}/notify`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,6 +35,8 @@ const Home = () => {
           "I have completed task, only the circular thing is left. Thank you.",
       }),
     });
+    const data = await res.json();
+    alert("Notified!");
   };
 
   useEffect(() => {
