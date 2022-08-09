@@ -35,8 +35,10 @@ const Home = () => {
           "I have completed task, only the circular thing is left. Thank you.",
       }),
     });
-    const data = await res.json();
-    alert("Notified!");
+    const data = await res.text();
+    console.log(data);
+
+    alert(data);
   };
 
   useEffect(() => {
@@ -74,7 +76,7 @@ const Home = () => {
             </div>
             <div className={styles.dotGroup}>
               {devices.map((dev, i) => (
-                <div className={styles.inner}></div>
+                <div key={i} className={styles.inner}></div>
               ))}
             </div>
           </div>
