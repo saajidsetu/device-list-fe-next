@@ -80,29 +80,6 @@ const Login: FC = () => {
         </form>
       </Card>
     </div>
-
-    // <div>
-    //   <h1>Login Here</h1>
-    //   <form onSubmit={handleSubmit}>
-    //     <div>
-    //       <label htmlFor="email">Email: </label>
-    //       <input
-    //         type="email"
-    //         id="email"
-    //         onChange={(e) => setEmail(e.target.value)}
-    //       />
-    //     </div>
-    //     <div>
-    //       <label htmlFor="password">Password: </label>
-    //       <input
-    //         type="password"
-    //         id="password"
-    //         onChange={(e) => setPassword(e.target.value)}
-    //       />
-    //     </div>
-    //     <button type="submit">Login</button>
-    //   </form>
-    // </div>
   );
 };
 

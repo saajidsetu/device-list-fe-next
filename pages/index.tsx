@@ -90,10 +90,6 @@ const Home = () => {
           </div>
         </div>
       )}
-
-      {/* <button style={{ position: "fixed" }} onClick={handleLogout}>
-        Logout
-      </button> */}
     </div>
   );
 };
